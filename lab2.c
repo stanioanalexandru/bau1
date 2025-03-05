@@ -3,7 +3,11 @@
 
 int function(int x){
 	x=x-2;
-	x=function(x);
+	if(x>0)
+	{
+		//printf("%d /n",x);
+		x=function(x);
+	}
 	return x;
 }
 
